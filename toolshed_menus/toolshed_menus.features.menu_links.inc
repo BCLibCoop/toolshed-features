@@ -255,6 +255,7 @@ function toolshed_menus_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Home',
     'options' => array(
+      'alter' => TRUE,
       'identifier' => 'main-menu_home:<front>',
     ),
     'module' => 'menu',

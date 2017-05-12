@@ -49,20 +49,20 @@ function toolshed_views_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['empty'] = TRUE;
-  $handler->display->display_options['header']['area_text_custom']['content'] = '<p>Resources on the Library Toolshed are open to all. Anyone wishing to access these resources can simply select the resources and download them. Users wishing to add content need to sign up for an account here:</p>
- <p><a href="/user/register/" class="button">Create an Account</a></p>
+  $handler->display->display_options['header']['area_text_custom']['content'] = '<p>Resources on the Library Toolshed are open to all. Anyone wishing to access these resources can simply select the resources and download them. Users wishing to add content need to sign up for an account here: <a href="http://librarytoolshed.ca/user/register">http://librarytoolshed.ca/user/register.</a></p>
+
 <p><strong>About</strong></p>
 <p>The Toolshed is a  collaborative initiative supported by The Alberta Library, The Association of BC Public Library Directors, Saskatchewan’s Multitype Library Board and the Manitoba Public Library Services Branch. The platform is hosted by our shared-service partner the BC Libraries Cooperative. It is a place of community knowledge and experience. It is where library staff share, access, and comment on training, instructional and programming resources created by library staff.</p>
 <p>The collection, including its relevancy, currency and authority, is developed by the library community. The collection focus is on materials that support training and programming, including but not limited to, scripts, templates, outlines, and links to webinars and toolkits. Where possible, file formats that make sharing and building on the work easy are greatly appreciated. Materials for the collection have been developed by a library staff member and have been approved by the owning home library for uploading.</p>
 <p>If you work for a library and would like to share your resources on the Toolshed, please sign up for an account and begin sharing.</p>
 
-<p><ul>
-<li><a href="http://www.thealbertalibrary.ab.ca/">The Alberta Library</a></li>
-<li><a href="http://abcpld.org/">The Association of BC Public Library Directors</a></li>
-<li><a href="http://sils.sk.ca.campusguides.com/mlb/index">Saskatchewan Multitype Library Board</a></li>
-<li><a href="http://www.gov.mb.ca/chc/pls">Manitoba Public Library Services Branch</a></li>
-</ul>
-</p>
+<p><strong>More about <a href="http://www.thealbertalibrary.ab.ca/">The Alberta Library</a></strong></p>
+<p><strong>More about <a href="http://abcpld.org/">The Association of BC Public Library Directors</a></strong></p>
+<p><strong>More about the <a href="http://sils.sk.ca.campusguides.com/mlb/index">Saskatchewan Multitype Library Board</a></strong></p>
+<p><strong>More about the <a href="http://www.gov.mb.ca/chc/pls">Manitoba Public Library Services Branch</a></strong></p>
+
+
+
 <p><strong>More about <a href="http://bc.libraries.coop/">The BC Libraries Cooperative</a></strong></p>
 
 <p><strong>Accessing and Uploading Content</strong></p>
@@ -4142,7 +4142,7 @@ function toolshed_views_views_default_views() {
   $handler->display->display_options['fields']['field_rating']['click_sort_column'] = 'rating';
   $handler->display->display_options['fields']['field_rating']['settings'] = array(
     'widget' => array(
-      'fivestar_widget' => 'sites/all/modules/fivestar/widgets/outlinecolor/outlinecolor.css',
+      'fivestar_widget' => 'sites/all/modules/fivestar/widgets/basic/basic.css',
     ),
     'expose' => 1,
     'style' => 'average',
@@ -5861,6 +5861,9 @@ function toolshed_views_views_default_views() {
   /* Filter criterion: Content: Presentation Topic (field_training_topic) */
   $handler->display->display_options['filters']['field_training_topic_value_1']['id'] = 'field_training_topic_value_1';
   $handler->display->display_options['filters']['field_training_topic_value_1']['table'] = 'field_data_field_training_topic';
+  $handler->display->display_options['filters']['field_training_topic_value_1']['value'] = array(
+    'Reader\'s Advisory' => 'Reader\'s Advisory',
+  );
   $handler->display->display_options['filters']['field_training_topic_value_1']['field'] = 'field_training_topic_value';
   $handler->display->display_options['filters']['field_training_topic_value_1']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_training_topic_value_1']['expose']['operator_id'] = 'field_training_topic_value_1_op';

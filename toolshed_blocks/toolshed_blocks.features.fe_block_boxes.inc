@@ -46,7 +46,6 @@ function toolshed_blocks_default_fe_block_boxes() {
 	<form accept-charset="UTF-8" action="/search" class="search-block-form" method="get">
 		<input class="form-text" maxlength="128" name="keys" size="15" title="Enter the terms you wish to search for." type="search" value="" /> <input class="form-submit" id="edit-submit" name="op" type="submit" value="Search" />&nbsp;</form>
 </div>
-<p>&nbsp;</p>
 ';
 
   $export['custom_search_block'] = $fe_block_boxes;
